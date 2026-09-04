@@ -16,25 +16,7 @@
     <meta name=”robots” content=”noindex,nofollow”>
 </head>
 <body>
-    <header>
-        <ul>
-            <li><a href="">ホーム</a></li>
-            <li><a href="">さくいん</a>
-                <ul>
-                    <li><a href="">五十音順さくいん</a></li>
-                    <li><a href="">路線別さくいん</a></li>
-                </ul>
-            </li>
-            <li><a href="">凡例</a></li>
-            <li><a href="">その他</a>
-                <ul>
-                    <li><a href="">問い合わせフォーム</a></li>
-                    <li><a href="">利用規約</a></li>
-                    <li><a href="">サイト更新情報</a></li>
-                </ul>
-            </li>
-        </ul>
-    </header>
+    <div id="header"></div>
     <div class="main">
         <div class="main_mainpage">
             <div class="main_mainpage_title">
@@ -43,6 +25,9 @@
                         <h2>ようこそ駅構内図（仮）に</h2>
                     </span>
                 </span>
+            </div>
+            <div class="main_mainpage_one">
+                
             </div>
             <div class="main_mainpage_two">
                 <h3>主要な駅</h3>
@@ -70,116 +55,16 @@
         <h3>駅や路線を検索する</h3>
         <script async src="https://cse.google.com/cse.js?cx=f4580689ba19f4b9b">
         </script>
-        <div class="gcse-search"></div>
+       <div class="gcse-search"></div>
     </div>
-    <footer>
-        <div class="ft_list">
-            <ul>
-                <div class="ft_list_one">
-                    <li>
-                        <span class="ft_list_title">
-                            <a href="">五十音順さくいん</a>
-                        </span>
-                        <table border="1">
-                            <tr>
-                                <td><a href="">わ</a></td>
-                                <td><a href="">ら</a></td>
-                                <td><a href="">や</a></td>
-                                <td><a href="">ま</a></td>
-                                <td><a href="">は</a></td>
-                                <td><a href="">な</a></td>
-                                <td><a href="">た</a></td>
-                                <td><a href="">さ</a></td>
-                                <td><a href="">か</a></td>
-                                <td><a href="">あ</a></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><a href="">り</a></td>
-                                <td></td>
-                                <td><a href="">み</a></td>
-                                <td><a href="">ひ</a></td>
-                                <td><a href="">に</a></td>
-                                <td><a href="">ち</a></td>
-                                <td><a href="">し</a></td>
-                                <td><a href="">き</a></td>
-                                <td><a href="">い</a></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><a href="">る</a></td>
-                                <td><a href="">ゆ</a></td>
-                                <td><a href="">む</a></td>
-                                <td><a href="">ふ</a></td>
-                                <td><a href="">ぬ</a></td>
-                                <td><a href="">つ</a></td>
-                                <td><a href="">す</a></td>
-                                <td><a href="">く</a></td>
-                                <td><a href="">う</a></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><a href="">れ</a></td>
-                                <td></td>
-                                <td><a href="">め</a></td>
-                                <td><a href="">へ</a></td>
-                                <td><a href="">ね</a></td>
-                                <td><a href="">て</a></td>
-                                <td><a href="">せ</a></td>
-                                <td><a href="">け</a></td>
-                                <td><a href="">え</a></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><a href="">ろ</a></td>
-                                <td><a href="">よ</a></td>
-                                <td><a href="">も</a></td>
-                                <td><a href="">ほ</a></td>
-                                <td><a href="">の</a></td>
-                                <td><a href="">と</a></td>
-                                <td><a href="">そ</a></td>
-                                <td><a href="">こ</a></td>
-                                <td><a href="">お</a></td>
-                            </tr>
-                        </table>
-                    </li>
-                </div>
-                <div class="ft_list_two">
-                    <li>
-                        <span class="ft_list_title">
-                            <a href="">路線別さくいん</a>
-                        </span>
-                        <ul>
-                            <li><a href="">北海道の路線</a></li>
-                            <li><a href="">東北地方の路線</a></li>
-                            <li><a href="">関東地方の路線</a></li>
-                            <li><a href="">中部地方の路線</a></li>
-                            <li><a href="">近畿地方の路線</a></li>
-                            <li><a href="">中国地方の路線</a></li>
-                            <li><a href="">四国地方の路線</a></li>
-                            <li><a href="">九州地方の路線</a></li>
-                        </ul>
-                    </li>
-                </div>
-                <div class="ft_list_three">
-                    <li>
-                        <span class="ft_list_title">
-                            <a href="">その他</a>
-                        </span>
-                        <ul>
-                            <li><a href="">凡例</a></li>
-                            <li><a href="">問い合わせフォーム</a></li>
-                            <li><a href="">利用規約</a></li>
-                            <li><a href="">サイト更新情報</a></li>
-                        </ul>
-                    </li>
-                </div>
-            </ul>
-        </div>
-        <!--ここにSNSのリンクを貼るといいかも-->
-        <div class="copyright">
-           <p>© 2025 駅構内図</p> 
-        </div>
-    </footer>
+    <div id="footer"></div>
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => document.querySelector("#header").innerHTML = data);
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => document.querySelector("#footer").innerHTML = data);
+    </script>
 </body>
 </html>
