@@ -1,0 +1,214 @@
+@charset "utf-8";
+/*数年後に突然再開する君へ＿使われているコードの名前はggrks＿どこのcssかはコメントアウトしておいたから感謝してクレメンス*/
+/*デフォルトはスマホ表記になっています*/
+/*全ページ共通css*/
+/*全体css*/
+* {
+    font-size: 1rem;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: #ebebeb;
+    color: #000000;
+}
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 0.3em 0.1em;
+}
+h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 0.1em 0.2em;
+}
+h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.3em 0.1em;
+}
+li {
+    list-style-type: none; 
+}
+a:hover , .ft_list a:hover {
+    font-weight: bold;
+    text-decoration:underline;
+}
+/*全体css終わり*/
+/*--------------------*/
+/*ヘッダーcss*/
+header {
+    /*ヘッダー上部固定*/
+    position: sticky;
+    z-index: 99;
+    top: 0;
+    /*装飾*/
+    background-color: #00bda7;
+    text-align: center;
+}
+/*＿ヘッダー装飾*/
+/*＿＿メインメニュー*/
+header li {
+    display: inline-block;
+    position: relative;
+}
+header a {
+    color: #ffffff;
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 40px;
+    padding: 0.2em;
+    text-align: center;
+    text-decoration: none;
+}
+header a:hover {
+    background-color: #ffff80;
+    color: #000000;
+}
+/*＿＿サブメニューを開く処理*/
+header li:hover ul {
+    display: block;
+}
+/*＿＿サブメニュー*/
+header ul ul {
+    background-color: #00bda7;
+    display: none;
+    position: absolute;
+    text-align: left;
+}
+header ul ul li {
+    border-top: 1px solid #ff4259;
+    width: 175px;
+}
+header ul ul a {
+    line-height: 35px;
+    text-align: left;
+    padding-left: 5px;
+}
+header ul ul a:hover {
+    background-color: #ffff80;
+    color: #000000;
+}
+/*＿ヘッダー装飾終わり＿*/
+/*＿ヘッダーリストレスポンシブデザイン対応*/
+@media screen and (min-width: 701px) {
+    header {
+        text-align: left;
+    }
+}
+/*ヘッダーcss終わり*/
+/*--------------------*/
+/*メインcss*/
+.main {
+    background-color: #ffffff;
+    float: left;
+    width: 100%;
+}
+.main h3 {
+    border: none;
+    border-bottom: 3px solid #00bda7;
+}
+.main p {
+    padding: 0em 0.3em;
+}
+.main ul {
+    display: flex;
+    flex-direction: column;
+}
+.right-navi {
+    float: right;
+}
+/*_メインレスポンシブデザイン対応*/
+@media screen and (min-width: 701px) {
+    .main {
+        width: 80%; 
+    }
+    .right-navi {
+        width: 20%;
+    }
+}
+/*メインcss終わり*/
+/*--------------------*/
+/*フッターcss*/
+footer {
+    clear: both;
+}
+/*＿フッターリストcss*/
+/*＿＿フッターリスト共通事項*/
+.ft_list ul {
+    display: block; 
+}
+.ft_list a {
+    display: block;
+    line-height: 2.4em; 
+    padding: 0px 0.3em;
+    text-decoration: none;
+}
+.ft_list_title a {
+    border: none;
+    border-bottom: 3px solid;
+    font-weight: bold;
+    line-height: 3em;
+    padding: 0px 0.1em;
+}
+.ft_list_one , .ft_list_two , .ft_list_three {
+    width: 100%;
+}
+/*＿＿フッターリスト共通事項終わり*/
+/*＿＿フッターリストレスポンシブデザイン対応*/
+@media screen and (min-width: 701px) {
+    .ft_list ul {
+        display: flex;
+        }
+    .ft_list ul ul {
+        display: block;
+    }
+}
+/*＿＿フッターリスト各項目*/
+/*＿＿＿五十音順さくいん*/
+/*＿＿＿＿五十音順さくいんの文字色*/
+.ft_list_one * { 
+    color: #dd0000;
+}
+/*＿＿＿＿五十音順さくいんの表*/
+.ft_list_one table {
+    border: 1px solid #dd0000;
+    margin: 0.3rem;
+    padding: 0.1rem;
+}
+/*＿＿＿＿五十音順さくいんの表の文字*/
+.ft_list_one table a {
+    padding: 0px 0.2em;
+    text-align: center;
+}
+/*＿＿＿路線別さくいん*/
+.ft_list_two * { 
+    color: #008c3a;
+}
+/*＿＿＿その他*/
+.ft_list_three * { 
+    color: #0000aa;
+}
+/*＿＿フッターリスト各項目終わり*/
+/*＿フッターリストcss終わり*/
+/*＿コピーライト*/
+.copyright {   
+    text-align: center;
+    }
+/*フッターcss終わり*/
+/*パラグラフcss*/
+.text_center {
+     text-align: center
+}
+.red_bold_big_paragraph {
+    color: #FF0000;
+    font-size: 1.4rem;
+    font-weight: bold;
+
+}
+@media screen and (min-width: 701px) {
+    .text_center_ptB {
+        text-align: left;
+    }
+/*全ページ共通終わり*/ 
