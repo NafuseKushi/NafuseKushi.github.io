@@ -37,13 +37,12 @@ a:hover , .ft_list a:hover {
 /*全体css終わり*/
 /*--------------------*/
 /*ヘッダーcss*/
-#header {
-     /*ヘッダー上部固定*/
-    position: sticky;
-    z-index: 99;
-    top: 0;
-}
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
     /*装飾*/
     background-color: #00bda7;
     text-align: center;
@@ -110,6 +109,7 @@ header ul ul a:hover {
 .main {
     background-color: #ffffff;
     float: left;
+    padding-top: 80px;
     width: 100%;
 }
 .main h3 {
