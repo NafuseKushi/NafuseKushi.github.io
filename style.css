@@ -100,6 +100,10 @@ header ul ul a:hover {
 }
 /*ヘッダーcss終わり*/
 /*--------------------*/
+/*ライトナビcss*/
+.right-navi {
+    float: right;
+}
 /*メインcss*/
 .main {
     background-color: #ffffff;
@@ -116,9 +120,6 @@ header ul ul a:hover {
 .main ul {
     display: flex;
     flex-direction: column;
-}
-.right-navi {
-    float: right;
 }
 /*_メインレスポンシブデザイン対応*/
 @media screen and (min-width: 701px) {
