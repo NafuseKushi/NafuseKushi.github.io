@@ -104,12 +104,12 @@ header ul ul a:hover {
 /*ライトナビcss*/
 .right-navi {
     float: right;
+    padding-top: 50px;
 }
 /*メインcss*/
 .main {
     background-color: #ffffff;
     float: left;
-    padding-top: 80px;
     width: 100%;
 }
 .main h3 {
