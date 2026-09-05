@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--数年後に突然再開する君へ＿使われているコードの名前はggrks-->
+<html lang="ja">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv=”X-UA-Compatible” content=”IE=Edge”>
+    <meta name="viewport" content="width=device-width">
+    <title>駅構内図</title>
+    <!--この下のmetaは公開時コメントの内容を打つ-->
+    <meta name=”description” content="日本全国の駅の構内図を統一フォーマットで製作し、公開しています。">
+    <link rel=”shortcut icon” href=”#”>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <!--この下のmetaは公開時消す-->
+    <meta name=”robots” content=”noindex,nofollow”>
+</head>
+<body>
+    <?php include "header.html" ?>
+    <?php include "right-navi.html" ?>
+    <div class="main">
+        <div class="main_mainpage">
+            <div class="main_mainpage_title">
+                <span class="text_center">
+                    <span class="text_center_ptB">
+                        <h2>ようこそ駅構内図（仮）に</h2>
+                    </span>
+                </span>
+            </div>
+            <div class="main_mainpage_one">
+                
+            </div>
+            <div class="main_mainpage_two">
+                <h3>主要な駅</h3>
+                <p>完成次第追加予定</p>
+            </div>
+            <!--ここに広告いれるのはあり-->
+            <div class="main_mainpage_three">
+                <h3>このサイトの説明</h3>
+                <div class="red_bold_big_paragraph">
+                    このサイトは非公式です。
+                </div>
+                <p>
+                    　従来の各鉄道会社の駅構内図は乗り換えするときに見比べる必要があります。また、会社ごとに表記が異なるため凡例を見ないとわからない場合があります。そこで、このサイトでは日本全国の駅構内図を統一形式で制作し、公開しています。<br>
+                    　このサイトは個人製作のウェブサイトです。サイト内の誤字脱字やバグ、駅構内図に問題があれば<a href="">問い合わせフォーム</a>までご連絡ください。鉄道会社に問い合わせることはご遠慮ください。
+                </p>
+            </div>
+            <div class="main_mainpage_four">
+                <h3>駅構内図について</h3>
+                <p>駅構内図は公式の駅構内図と実地調査をもとに製作しています。なお、駅の工事等に伴う変更に対応していない場合がありますのであらかじめご了承ください。</p>
+            </div>
+        </div>
+    </div>
+    <?php include "footer.html" ?>
+</body>
+</html>
