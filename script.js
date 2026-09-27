@@ -3,8 +3,8 @@ fetch("header.html")
   .then((data) => document.querySelector("#header").innerHTML = data);
 fetch("right-navi.html")
     .then((response) => response.text())
-   .then(html => {
-    document.getElementById('nav-container').innerHTML = html;
+   .then(data => {
+    document.querySelector("#right-navi").innerHTML = deta;
     const script = document.createElement('script');
     script.src = 'https://cse.google.com/cse.js?cx=f4580689ba19f4b9b'; 
     script.async = true;
