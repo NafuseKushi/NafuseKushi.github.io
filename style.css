@@ -120,6 +120,9 @@ header ul ul a:hover {
 .right-navi {
     float: right;
 }
+.gcse-search {
+    width: 100%;
+}
 /*_メインレスポンシブデザイン対応*/
 @media screen and (min-width: 701px) {
     .main {
