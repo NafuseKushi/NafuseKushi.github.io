@@ -118,7 +118,25 @@ header ul ul a:hover {
     flex-direction: column;
 }
 .right-navi {
-    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.search-wrapper {
+  min-width: 140px;
+  max-width: 250px;
+  flex-shrink: 1;
+}
+.search-wrapper .gsc-control-cse {
+  width: 100% !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+.search-wrapper table.gsc-search-box {
+  table-layout: fixed !important;
+  width: 100% !important;
 }
 /*_メインレスポンシブデザイン対応*/
 @media screen and (min-width: 701px) {
@@ -128,15 +146,6 @@ header ul ul a:hover {
     .right-navi {
         width: 20%;
     }
-}
-.right-navi .gsc-control-cse {
-  width: 100% !important;
-  max-width: 100% !important;
-  box-sizing: border-box !important;
-  padding: 0 !important;
-}
-.gsc-control-cse * {
-  box-sizing: border-box !important;
 }
 /*メインcss終わり*/
 /*--------------------*/
