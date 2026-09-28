@@ -13,7 +13,6 @@ fetch("right-navi.html")
         });
       }
     };
-
     // 3. すでにGoogleのオブジェクトが存在する場合は即時描画、まだなら準備完了後に実行
     if (window.google && google.search && google.search.cse) {
       renderSearch();
