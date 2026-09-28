@@ -125,7 +125,7 @@ header ul ul a:hover {
     box-sizing: border-box;
 }
 input, textarea {
-    width: 100%;
+    width: 18%;
     max-width: 200px;
     box-sizing: border-box;
 }
