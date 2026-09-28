@@ -124,13 +124,10 @@ header ul ul a:hover {
     width: 100%;
     box-sizing: border-box;
 }
-.right-navi form {
-    width: 100%;
-    max-width: 200px
-}
 input, textarea {
-  width: 100%;
-  box-sizing: border-box;
+    width: 100%;
+    max-width: 200px;
+    box-sizing: border-box;
 }
 /*_メインレスポンシブデザイン対応*/
 @media screen and (min-width: 701px) {
