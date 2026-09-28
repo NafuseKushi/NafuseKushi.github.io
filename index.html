@@ -3,15 +3,13 @@
 <html lang="ja">
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>ホーム/駅構内図</title>
     <meta name=”description” content="日本全国の駅の構内図を統一フォーマットで製作し、公開しています。">
-    <script>
-    fetch('head.html')
-      .then(response => response.text())
-      .then(data => {
-        document.head.insertAdjacentHTML('beforeend', data);
-      });
-  </script>
+    <link rel="icon" href="logo_001.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
 </head>
 <body>
     <div id="header"></div>
