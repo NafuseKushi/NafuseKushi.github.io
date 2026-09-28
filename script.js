@@ -3,10 +3,10 @@ fetch("header.html")
   .then((data) => document.querySelector("#header").innerHTML = data);
 fetch("right-navi.html")
     .then((response) => response.text())
-   .then(data => {
-    document.querySelector("#right-navi").innerHTML = data;
+   .then(html => {
+    document.getElementById("#right-navi").innerHTML = html;
     const script = document.createElement('script');
-    script.src = 'https://cse.google.com/cse.js?cx=f4580689ba19f4b9b'; 
+    script.src = 'https://cse.google.com/cse.js?cx=f4580689ba19f4b9b';
     script.async = true;
     document.head.appendChild(script);
   });
