@@ -125,7 +125,8 @@ header ul ul a:hover {
     box-sizing: border-box;
 }
 .right-navi form {
-
+    width: 100%;
+    max-width: 200px
 }
 input, textarea {
   width: 100%;
