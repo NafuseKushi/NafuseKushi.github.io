@@ -4,7 +4,7 @@ fetch("header.html")
 fetch("right-navi.html")
     .then((response) => response.text())
    .then(html => {
-    document.getElementById("#right-navi").innerHTML = html;
+    document.getElementById("right-navi").innerHTML = html;
     const script = document.createElement('script');
     script.src = 'https://cse.google.com/cse.js?cx=f4580689ba19f4b9b';
     script.async = true;
