@@ -226,6 +226,9 @@ footer {
 .big_paragraph {
     font-size: 1.4rem;
 }
+.space_paragraph {
+    padding: 0.2em 0.1em;
+}
 @media screen and (min-width: 701px) {
     .text_center_ptB {
         text-align: left;
