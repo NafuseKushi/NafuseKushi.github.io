@@ -185,12 +185,6 @@ footer {
 .ft_list_one * { 
     color: #dd0000;
 }
-/*＿＿＿＿五十音順さくいんの表*/
-.ft_list_one table {
-    border: 1px solid #dd0000;
-    margin: 0.3rem;
-    padding: 0.1rem;
-}
 /*＿＿＿＿五十音順さくいんの表の文字*/
 .ft_list_one table a {
     padding: 0px 0.2em;
@@ -215,14 +209,24 @@ footer {
 .text_center {
      text-align: center
 }
-.red_bold_big_paragraph {
+.redparagraph {
     color: #FF0000;
-    font-size: 1.4rem;
+}
+.bold_paragraph {
     font-weight: bold;
-
+}
+.big_paragraph {
+    font-size: 1.4rem;
 }
 @media screen and (min-width: 701px) {
     .text_center_ptB {
         text-align: left;
     }
+}
+/*その他*/
+ table {
+    border: 1px solid #dd0000;
+    margin: 0.3rem;
+    padding: 0.1rem;
+}
 /*全ページ共通終わり*/ 
