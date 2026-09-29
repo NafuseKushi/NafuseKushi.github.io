@@ -118,17 +118,16 @@ header ul ul a:hover {
 }
 /*ライトナビcss*/
 .right-navi {
+    align-items: center;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
-    box-sizing: border-box;
 }
 input, textarea {
     box-sizing: border-box;
-    font-size: 1.4rem;
-    width: 70%;
     max-width: 350px;
+    width: 70%;
 }
 /*_メインレスポンシブデザイン対応*/
 @media screen and (min-width: 701px) {
@@ -139,9 +138,8 @@ input, textarea {
         width: 20%;
     }
     input, textarea {
-        width: 18%;
         max-width: 200px;
-        font-size: 1.2rem;
+        width: 18%;
     }
 }
 /*メインcss終わり*/
