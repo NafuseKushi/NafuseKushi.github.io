@@ -235,3 +235,7 @@ footer {
     }
 }
 /*全ページ共通終わり*/ 
+/*個別ページ*/
+.main_sakuin a {
+    padding: 0.2em 0.1em;
+}
