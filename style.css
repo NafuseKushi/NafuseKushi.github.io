@@ -125,9 +125,10 @@ header ul ul a:hover {
     box-sizing: border-box;
 }
 input, textarea {
+    box-sizing: border-box;
+    font-size: 1.4rem;
     width: 70%;
     max-width: 350px;
-    box-sizing: border-box;
 }
 /*_メインレスポンシブデザイン対応*/
 @media screen and (min-width: 701px) {
@@ -138,8 +139,9 @@ input, textarea {
         width: 20%;
     }
     input, textarea {
-    width: 18%;
+        width: 18%;
         max-width: 200px;
+        font-size: 1.2rem;
     }
 }
 /*メインcss終わり*/
