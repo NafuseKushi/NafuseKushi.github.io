@@ -238,5 +238,5 @@ footer {
 /*個別ページ*/
 .main_sakuin a {
     display: block;
-    padding: 0.2em 0.1em;
+    line-height: 1.5em;
 }
