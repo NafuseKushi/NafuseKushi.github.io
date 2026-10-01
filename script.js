@@ -6,9 +6,9 @@ fetch("/header.html")
         setTimeout(() => {
           document.documentElement.style.scrollBehavior ="auto";
           targetElement.scrollIntoView({ behavior:"smooth"});
-        }, 100);
-        setTimeout(() => {
-          document.documentElement.style.scrollBehavior = '';
+          setTimeout(() => {
+            document.documentElement.style.scrollBehavior = '';
+          }, 100);
         }, 100);
       }
     }
