@@ -2,7 +2,10 @@ fetch("/header.html")
   .then((response) => response.text())
   .then(data => {
     document.getElementById("header").innerHTML = data;
-    if (targetElement) {
+    if (window.location.hash) {
+      const targetId = window.location.hash;
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
         setTimeout(() => {
           document.documentElement.style.scrollBehavior = 'auto';
           targetElement.scrollIntoView({ behavior: 'smooth' });
@@ -10,6 +13,7 @@ fetch("/header.html")
             document.documentElement.style.scrollBehavior = '';
           }, 100);
         }, 100);
+      }
     }
   });
 fetch("/right-navi.html")
