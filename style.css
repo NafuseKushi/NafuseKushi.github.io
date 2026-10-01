@@ -7,6 +7,9 @@
     margin: 0px;
     padding: 0px;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
     background-color: #ebebeb;
     color: #000000;
