@@ -2,13 +2,13 @@ fetch("/header.html")
   .then((response) => response.text())
   .then(data => {
     document.getElementById("header").innerHTML = data;
-    if (window.location.hash) {
-      const targetId = window.location.hash;
-      const targetElement = document.querySelector(targetId);
-
-      if (targetElement) {
+     if (targetElement) {
         setTimeout(() => {
-          targetElement.scrollIntoView({ behavior:"auto"});
+          document.documentElement.style.scrollBehavior ="auto";
+          targetElement.scrollIntoView({ behavior:"smooth"});
+        }, 100);
+        setTimeout(() => {
+          document.documentElement.style.scrollBehavior = '';
         }, 100);
       }
     }
