@@ -39,7 +39,7 @@ a:hover , .ft_list a:hover {
 table {
     border: 1px solid #000000;
     margin: 0.3rem;
-    padding: 0.1rem;
+    padding: 0px 0.2em;
 }
 /*全体css終わり*/
 /*--------------------*/
