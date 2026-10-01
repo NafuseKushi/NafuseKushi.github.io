@@ -1,14 +1,14 @@
 fetch("/header.html")
   .then((response) => response.text())
   .then(data => {
-    document.getElementById('header').innerHTML = data;
+    document.getElementById("header").innerHTML = data;
     if (window.location.hash) {
       const targetId = window.location.hash;
       const targetElement = document.querySelector(targetId);
 
       if (targetElement) {
         setTimeout(() => {
-          targetElement.scrollIntoView({ behavior: 'smooth' });
+          targetElement.scrollIntoView({ behavior:"auto"});
         }, 100);
       }
     }
