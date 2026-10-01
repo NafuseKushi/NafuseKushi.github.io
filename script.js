@@ -10,7 +10,6 @@ fetch("/header.html")
             document.documentElement.style.scrollBehavior = '';
           }, 100);
         }, 100);
-      }
     }
   });
 fetch("/right-navi.html")
