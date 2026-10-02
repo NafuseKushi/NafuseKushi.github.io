@@ -138,7 +138,7 @@ header ul ul a:hover {
     justify-content: space-between;
     width: 100%;
 }
-input {
+form {
     font-size: 1.4rem;
 }
 input, textarea {
