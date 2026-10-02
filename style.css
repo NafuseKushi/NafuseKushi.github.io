@@ -157,7 +157,7 @@ header ul ul a:hover {
     .right-navi {
         width: 20%;
     }
-    input, textarea {
+    .custom-search-form input, textarea {
         max-width: 200px;
         width: 18%;
     }
