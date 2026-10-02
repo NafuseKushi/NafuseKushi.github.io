@@ -138,16 +138,16 @@ header ul ul a:hover {
     justify-content: space-between;
     width: 100%;
 }
-form {
+.right-navi form {
     font-size: 1.4rem;
 }
-input, textarea {
+.right-navi input, textarea {
     box-sizing: border-box;
     max-width: 350px;
     width: 70%;
 }
-button {
-    font-size: 1.2rem;
+.right-navi button {
+    font-size: 1rem;
 }
 /*_メインレスポンシブデザイン対応*/
 @media screen and (min-width: 701px) {
