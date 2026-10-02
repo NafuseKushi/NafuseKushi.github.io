@@ -140,6 +140,7 @@ header ul ul a:hover {
 }
 input, textarea {
     box-sizing: border-box;
+    font-size: 1.4rem;
     max-width: 350px;
     width: 70%;
 }
