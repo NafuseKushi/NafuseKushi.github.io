@@ -138,9 +138,11 @@ header ul ul a:hover {
     justify-content: space-between;
     width: 100%;
 }
+input {
+    font-size: 1.4rem;
+}
 input, textarea {
     box-sizing: border-box;
-    font-size: 1.4rem;
     max-width: 350px;
     width: 70%;
 }
