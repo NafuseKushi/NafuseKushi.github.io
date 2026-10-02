@@ -138,10 +138,10 @@ header ul ul a:hover {
     justify-content: space-between;
     width: 100%;
 }
-.right-navi form {
+.custom-search-form {
     font-size: 1.4rem;
 }
-.right-navi input, textarea {
+.custom-search-form input, textarea {
     box-sizing: border-box;
     max-width: 350px;
     width: 70%;
