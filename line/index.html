@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>鉄道会社一覧/駅構内図</title>
+    <meta name=”description” content="日本全国の駅の構内図を統一フォーマットで製作し、公開しています。">
+    <link rel="icon" href="\logo_001.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="\normalize.css">
+    <link rel="stylesheet" href="\style.css">
+    <link rel="stylesheet" href="\linecolor.css">
+    <meta name="theme-color" content="#00bda7">
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+        <div class="main_line">
+            <h1>鉄道会社一覧</h1>
+            <section class="main_line_one">
+                <h2>路線別さくいん</h2>
+                <div class="line-style_disk">
+                        <ul>
+                            <li><a href="\sakuin\hokkaido">北海道の路線</a></li>
+                            <li><a href="\sakuin\tohku">東北地方の路線</a></li>
+                            <li><a href="\sakuin\kanto">関東地方の路線</a></li>
+                            <li><a href="\sakuin\chubu">中部地方の路線</a></li>
+                            <li><a href="\sakuin\kinki">近畿地方の路線</a></li>
+                            <li><a href="\sakuin\chugoku">中国地方の路線</a></li>
+                            <li><a href="\sakuin\shikoku">四国地方の路線</a></li>
+                            <li><a href="\sakuin\kyusyu">九州地方の路線</a></li>                  
+                        </ul>
+                    </div>
+            </section>
+            <section>
+                <h2>各会社</h2>
+                <details name="requirements" class="line-style_disk">
+                    <summary>JR</summary>
+                    <ul>
+                        <li><a href=".\jr">全線</a></li>
+                        <li><a href=".\jr\jrh\">JR北海道</a></li>
+                        <li><a href=".\jr\jre\">JR東日本</a></li>
+                        <li><a href=".\jr\jrc\">JR東海</a></li>
+                        <li><a href=".\jr\jrw\">JR西日本</a></li>
+                        <li><a href=".\jr\jrs\">JR四国</a></li>
+                        <li><a href=".\jr\jrq\">JR九州</a></li>
+                    </ul>
+                </details>
+            </section>
+        </div>
+    </main>
+    <div id="right-navi"></div>
+    <div id="footer"></div>
+    <script src="\script.js"></script>
+</body>
+</html>
