@@ -7,111 +7,102 @@
     <title>さくいん/駅構内図</title>
     <meta name=”description” content="日本全国の駅の構内図を統一フォーマットで製作し、公開しています。">
     <link rel="icon" href="\logo_001.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="\style.css">
     <link rel="stylesheet" href="\normalize.css">
+    <link rel="stylesheet" href="\style.css">
+    <link rel="stylesheet" href="\linecolor.css">
+    <meta name="theme-color" content="#00bda7">
 </head>
 <body>
     <div id="header"></div>
-    <div class="main">
+    <main>
         <div class="main_sakuin">
-            <div class="main_sakuin_title">
-                <span class="text_center">
-                    <span class="text_center_ptB">
-                        <h2>さくいん</h2>
-                    </span>
-                </span>
-            </div>
-            <div class="main_sakuin_one">
-                <h3>目次</h3>
-                <ul>
-                    <li><a href="#spelsakuin">五十音順さくいん</a></li>
-                    <li><a href="#linesakuin">路線別さくいん</a></li>
-                </ul>
-            </div>
-            <div class="main_sakuin_two">
+            <h1>さくいん</h1>
+            <section class="main_sakuin_one">
                 <div id="spelsakuin">
-                    <h3>五十音順さくいん</h3>
-                    <table border="1">
+                    <h2>五十音順さくいん</h2>
+                    <table class="row_change" dir="rtl" border="1">
                         <tr>
-                            <td><a href="">わ</a></td>
-                            <td><a href="">ら</a></td>
-                            <td><a href="">や</a></td>
-                            <td><a href="">ま</a></td>
-                            <td><a href="">は</a></td>
-                            <td><a href="">な</a></td>
-                            <td><a href="">た</a></td>
-                            <td><a href="">さ</a></td>                                        
-                            <td><a href="">か</a></td>
-                            <td><a href="">あ</a></td>
+                            <td><a href=".\a">あ</a></td>
+                            <td><a href=".\ka">か</a></td>
+                            <td><a href=".\sa">さ</a></td>
+                            <td><a href=".\ta">た</a></td>
+                            <td><a href=".\na">な</a></td>
+                            <td><a href=".\ha">は</a></td>
+                            <td><a href=".\ma">ま</a></td>
+                            <td><a href=".\ya">や</a></td>                                        
+                            <td><a href=".\ra">ら</a></td>
+                            <td><a href=".\wa">わ</a></td>
                         </tr>
                         <tr>
+                            <td><a href=".\i">い</a></td>
+                            <td><a href=".\ki">き</a></td>
+                            <td><a href=".\shi">し</a></td>
+                            <td><a href=".\chi">ち</a></td>
+                            <td><a href=".\ni">に</a></td>
+                            <td><a href=".\hi">ひ</a></td>
+                            <td><a href=".\mi">み</a></td>
                             <td></td>
-                            <td><a href="">り</a></td>
+                            <td><a href=".\ri">り</a></td>
                             <td></td>
-                            <td><a href="">み</a></td>
-                            <td><a href="">ひ</a></td>
-                            <td><a href="">に</a></td>
-                            <td><a href="">ち</a></td>
-                            <td><a href="">し</a></td>
-                            <td><a href="">き</a></td>
-                            <td><a href="">い</a></td>
                         </tr>
                         <tr>
+                            <td><a href=".\u">う</a></td>
+                            <td><a href=".\ku">く</a></td>
+                            <td><a href=".\su">す</a></td>
+                            <td><a href=".\tsu">つ</a></td>
+                            <td><a href=".\nu">ぬ</a></td>
+                            <td><a href=".\fu">ふ</a></td>
+                            <td><a href=".\mu">む</a></td>
+                            <td><a href=".\yu">ゆ</a></td>
+                            <td><a href=".\ru">る</a></td>
                             <td></td>
-                            <td><a href="">る</a></td>
-                            <td><a href="">ゆ</a></td>
-                            <td><a href="">む</a></td>
-                            <td><a href="">ふ</a></td>
-                            <td><a href="">ぬ</a></td>
-                            <td><a href="">つ</a></td>
-                            <td><a href="">す</a></td>
-                            <td><a href="">く</a></td>
-                            <td><a href="">う</a></td>
                         </tr>
                         <tr>
+                            <td><a href=".\e">え</a></td>
+                            <td><a href=".\ke">け</a></td>
+                            <td><a href=".\se">せ</a></td>
+                            <td><a href=".\te">て</a></td>
+                            <td><a href=".\ne">ね</a></td>
+                            <td><a href=".\he">へ</a></td>
+                            <td><a href=".\me">め</a></td>
                             <td></td>
-                            <td><a href="">れ</a></td>
+                            <td><a href=".\re">れ</a></td>
                             <td></td>
-                            <td><a href="">め</a></td>
-                            <td><a href="">へ</a></td>
-                            <td><a href="">ね</a></td>
-                            <td><a href="">て</a></td>
-                            <td><a href="">せ</a></td>
-                            <td><a href="">け</a></td>
-                            <td><a href="">え</a></td>
                         </tr>
                         <tr>
+                            <td><a href=".\o">お</a></td>
+                            <td><a href=".\ko">こ</a></td>
+                            <td><a href=".\so">そ</a></td>
+                            <td><a href=".\to">と</a></td>
+                            <td><a href=".\no">の</a></td>
+                            <td><a href=".\ho">ほ</a></td>
+                            <td><a href=".\mo">も</a></td>
+                            <td><a href=".\yo">よ</a></td>
+                            <td><a href=".\ro">ろ</a></td>
                             <td></td>
-                            <td><a href="">ろ</a></td>
-                            <td><a href="">よ</a></td>
-                            <td><a href="">も</a></td>
-                            <td><a href="">ほ</a></td>
-                            <td><a href="">の</a></td>
-                            <td><a href="">と</a></td>
-                            <td><a href="">そ</a></td>
-                            <td><a href="">こ</a></td>
-                            <td><a href="">お</a></td>
                         </tr>
                     </table>
                 </div>
-            </div>
-            <div>
+            </section>
+            <section class="main_sakuin_two">
                 <div id="linesakuin">
-                    <h3>路線別さくいん</h3>
-                    <ul>
-                        <li><a href="">北海道の路線</a></li>
-                        <li><a href="">東北地方の路線</a></li>
-                        <li><a href="">関東地方の路線</a></li>
-                        <li><a href="">中部地方の路線</a></li>
-                        <li><a href="">近畿地方の路線</a></li>
-                        <li><a href="">中国地方の路線</a></li>
-                        <li><a href="">四国地方の路線</a></li>
-                        <li><a href="">九州地方の路線</a></li>                  
-                    </ul>
+                    <h2>路線別さくいん</h2>
+                    <div class="line-style_disk">
+                        <ul>
+                            <li><a href=".\hokkaido">北海道の路線</a></li>
+                            <li><a href=".\tohku">東北地方の路線</a></li>
+                            <li><a href=".\kanto">関東地方の路線</a></li>
+                            <li><a href=".\chubu">中部地方の路線</a></li>
+                            <li><a href=".\kinki">近畿地方の路線</a></li>
+                            <li><a href=".\chugoku">中国地方の路線</a></li>
+                            <li><a href=".\shikoku">四国地方の路線</a></li>
+                            <li><a href=".\kyusyu">九州地方の路線</a></li>                
+                        </ul>
+                    </div>
                 </div>    
-            </div>
+            </section>
         </div>
-    </div>
+    </main>
     <div id="right-navi"></div>
     <div id="footer"></div>
     <script src="\script.js"></script>
