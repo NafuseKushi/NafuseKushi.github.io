@@ -2,37 +2,49 @@
 /*デフォルトはスマホ表記になっています*/
 /*全ページ共通css*/
 /*全体css*/
+:root {
+    --theme-color: #00bda7;
+    --background-color: #ebebeb;
+    --main_background-color: #ffffff;
+}
 * {
+    font-family: "Noto Sans JP", sans-serif;
     font-size: 1rem;
     margin: 0px;
     padding: 0px;
 }
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 body {
-    background-color: #ebebeb;
+    background-color: var(--background-color);
     color: #000000;
 }
-h2 {
+h1 {
     font-size: 1.8rem;
     font-weight: bold;
     padding: 0.3em 0.1em;
+    margin: 0px;
 }
-h3 {
+h2 {
     font-size: 1.4rem;
     font-weight: bold;
     padding: 0.1em 0.2em;
 }
-h4 {
+h3 {
     font-size: 1.2rem;
     font-weight: bold;
     padding: 0.3em 0.1em;
 }
 li {
-    list-style-type: none; 
+    list-style-type: none;  
+}
+.line-style_disk li {
+    list-style: disc inside;
+    padding: 0.3em 0.5em;
 }
 a:hover , .ft_list a:hover {
+    cursor: pointer;
     font-weight: bold;
     text-decoration:underline;
 }
@@ -41,19 +53,10 @@ table {
     margin: 0.3rem;
     padding: 0.1em;
 }
-table a {
-    padding: 0px 0.2em;
-}
 /*全体css終わり*/
-/*--------------------*/
 /*ヘッダーcss*/
 header {
-    /*ヘッダー上部固定*/
-    position: sticky;
-    z-index: 99;
-    top: 0;
-    /*装飾*/
-    background-color: #00bda7;
+    background-color: var(--theme-color);
     text-align: center;
 }
 /*＿ヘッダー装飾*/
@@ -67,13 +70,13 @@ header a {
     display: block;
     font-size: 1.5rem;
     font-weight: bold;
-    line-height: 40px;
+    line-height: 1.7em;
     padding: 0.2em;
     text-align: center;
     text-decoration: none;
 }
 header a:hover {
-    background-color: #ffff80;
+    background-color: #ffff66;
     color: #000000;
 }
 /*＿＿サブメニューを開く処理*/
@@ -82,7 +85,7 @@ header li:hover ul {
 }
 /*＿＿サブメニュー*/
 header ul ul {
-    background-color: #00bda7;
+    background-color: var(--theme-color);
     display: none;
     position: absolute;
     text-align: left;
@@ -93,12 +96,12 @@ header ul ul li {
 }
 header ul ul a {
     font-size: 1.1rem;
-    line-height: 35px;
+    line-height: 1.8em;
     text-align: left;
-    padding-left: 5px;
+    padding-left: 0.3em;
 }
 header ul ul a:hover {
-    background-color: #ffff80;
+    background-color: #ffff66;
     color: #000000;
 }
 /*＿ヘッダー装飾終わり＿*/
@@ -111,26 +114,54 @@ header ul ul a:hover {
 /*ヘッダーcss終わり*/
 /*--------------------*/
 /*メインcss*/
-.main {
-    background-color: #ffffff;
+main {
+    background-color: var(--main_background-color);
     float: left;
     width: 100%;
+    h1 {
+        text-align: center
+    }
+    h2 {
+        border: none;
+        border-bottom: 3px solid var(--theme-color);
+    }
+    p {
+        padding: 0px 0.3em;
+        text-indent: 1em;
+    }
+    li {
+        padding: 0px 0.3em;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
 }
-.main h3 {
-    border: none;
-    border-bottom: 3px solid #00bda7;
+/*__details部分*/
+main details {
+    padding: 0.1em 0.3em 0px;
+    margin: 0.5em 0px;
+    summary {
+        font-size: 1.2rem;
+        font-weight: bold;
+        border-bottom: 2px solid var(--theme-color);
+    }
+    a {
+        /*display: block;*/
+        padding: 0px;
+    }
 }
-.main p {
-    padding: 0em 0.3em;
+/*_表の行色チェンジ*/
+.row_change td:nth-of-type(even) {
+    background-color: var(--background-color);
 }
-.main ul {
-    display: flex;
-    flex-direction: column;
+.column_change tr:nth-of-type(odd) {
+    background-color: var(--background-color);
 }
-.main li {
-    padding: 0em 0.3em;
+.table_nochange {
+    background-color: var(--main_background-color);
 }
-/*ライトナビcss*/
+/*_ライトナビcss*/
 .right-navi {
     align-items: center;
     box-sizing: border-box;
@@ -146,13 +177,16 @@ header ul ul a:hover {
     max-width: 350px;
     width: 70%;
 }
-.searchbutton {
+.search-button {
     font-size: 1rem;
 }
 /*_メインレスポンシブデザイン対応*/
 @media screen and (min-width: 701px) {
-    .main {
+    main {
         width: 80%; 
+    }
+    main h1 {
+        text-align: left;
     }
     .right-navi {
         width: 20%;
@@ -168,8 +202,7 @@ header ul ul a:hover {
 footer {
     clear: both;
 }
-/*＿フッターリストcss*/
-/*＿＿フッターリスト共通事項*/
+/*＿フッターリスト共通事項*/
 .ft_list ul {
     display: block; 
 }
@@ -189,8 +222,7 @@ footer {
 .ft_list_one , .ft_list_two , .ft_list_three {
     width: 100%;
 }
-/*＿＿フッターリスト共通事項終わり*/
-/*＿＿フッターリストレスポンシブデザイン対応*/
+/*＿フッターリストレスポンシブデザイン対応*/
 @media screen and (min-width: 701px) {
     .ft_list ul {
         display: flex;
@@ -199,62 +231,128 @@ footer {
         display: block;
     }
 }
-/*＿＿フッターリスト各項目*/
-/*＿＿＿五十音順さくいん*/
-/*＿＿＿＿五十音順さくいんの文字色*/
+/*＿フッターリスト各項目*/
+/*＿＿五十音順さくいん*/
 .ft_list_one * { 
     color: #dd0000;
 }
 .ft_list_one table {
     border: 1px solid #dd0000;
 }
-/*＿＿＿＿五十音順さくいんの表の文字*/
-.ft_list_one table a {
-    padding: 0px 0.2em;
-    text-align: center;
-}
-/*＿＿＿路線別さくいん*/
+/*＿＿路線別さくいん*/
 .ft_list_two * { 
     color: #008c3a;
 }
-/*＿＿＿その他*/
+/*＿＿その他*/
 .ft_list_three * { 
     color: #0000aa;
 }
-/*＿＿フッターリスト各項目終わり*/
-/*＿フッターリストcss終わり*/
 /*＿コピーライト*/
 .copyright {   
     text-align: center;
     }
 /*フッターcss終わり*/
 /*パラグラフcss*/
-.text_center {
-     text-align: center
-}
-.red_paragraph {
-    color: #FF0000;
-}
-.bold_paragraph {
+.shift_paragraph_b_r_b {
     font-weight: bold;
-}
-.big_paragraph {
+    color: #dd0000;
     font-size: 1.4rem;
 }
-.space_paragraph {
-    padding: 0.2em 0.1em;
-}
-@media screen and (min-width: 701px) {
-    .text_center_ptB {
-        text-align: left;
-    }
+.symbol::before {
+    content: "";
+    display: inline-block;
+    width: 1.4em; 
+    height: 1.4em;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 4px;
 }
 /*全ページ共通終わり*/ 
 /*個別ページ*/
+/*_路線ページ*/
+/*__表*/
+.main_line_table {
+    table {
+        border: 1px solid;
+        display: block;
+        overflow: auto;
+        border-collapse: collapse;
+        white-space: nowrap;
+    }
+    th , td {
+        border: 1px solid black;
+        padding: 0.3em 0.6em;
+        text-align: center;
+    }
+    th {
+        background-color: var(--theme-color);
+        color: #ffffff;
+    }
+
+    td:nth-child(2) , td:nth-child(3) {
+        padding: 0px;
+        a {
+            display: block;
+            padding: 0.3em 0.6em;
+        }
+    }
+    td:nth-child(3) {
+        font-size: 0px;
+        text-align: left;
+    }
+    a {
+        display: block;
+    }
+}
+@media screen and (min-width: 701px) {
+    .main_line_table , .main_company_table {
+        display: inline-block;
+    }
+}
+/*_駅構内図ページ*/
+/*__画像*/
+.main_station_img img {
+    margin: 3% 0px 1%;
+    width: 100%;
+    height: auto;
+}
+@media screen and (min-width: 701px) {
+    .main_station_img img {
+        margin: 3% 0px 1%;
+        width: 80%;
+        height: auto;
+    }
+    .main_station_img {
+        text-align: center;
+    }
+}
+/*__表*/
+.main_station_table {
+    table {
+        border: 1px solid;
+        overflow: auto;
+        display: block;
+        border-collapse: collapse;
+        white-space: nowrap;
+    }
+    th , td {
+        border: 1px solid black;
+        padding: 0.3em 0.6em;
+        text-align: center; 
+    }
+    th {
+        background-color: var(--theme-color);
+        color: #ffffff;
+    }
+}
+/*_さくいんページ*/
 .main_sakuin a {
     display: block;
-    line-height: 2em;
+    line-height: 2.5em;
+    padding: 0px 0.3em;
 }
 .main_sakuin_two a {
-    line-height: 2.5em;
+    display: inline-block;
+    line-height: 1.5em;
 }
