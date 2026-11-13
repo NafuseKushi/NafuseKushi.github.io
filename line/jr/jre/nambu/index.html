@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>南武線/駅構内図</title>
+    <meta name=”description” content="日本全国の駅の構内図を統一フォーマットで製作し、公開しています。">
+    <link rel="icon" href="\logo_001.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="\normalize.css">
+    <link rel="stylesheet" href="\style.css">
+    <link rel="stylesheet" href="\linecolor.css">
+    <meta name="theme-color" content="#00bda7">
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+        <div class="main_line">
+            <div class="main_line_nambu">
+                <h1 class="line-logo nambu">JR南武線</h1>
+                <section class="main_line_nambu_one">
+                    <h2>駅一覧</h2>
+                    <h3>本線</h3>
+                    <div class="main_line_table">
+                        <table  class="column_change">
+                            <tr class="jr_jre_nambu_color">
+                                <th>駅番号</th>
+                                <th>駅名</th>
+                                <th>乗り換え路線</th>
+                                <th>更新日</th>
+                                <th>version</th>
+                            </tr>
+                            <tr id="jn01">
+                                <td>JN01</td>
+                                <td><a href="..\tokaido\kawasaki">川崎</a></td>
+                                <td>
+                                    <a href="..\tokaido\#jt04" class="line-logo tokaido_east">JR東海道線（東京～熱海）</a>
+                                    <a href="..\ueno-tokyo\#ju18" class="line-logo uenotokyo">JR上野東京ライン</a>
+                                    <a href="..\keihintohoku\#jk16" class="line-logo keihintohoku">JR京浜東北線</a>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn02">
+                                <td>JN02</td>
+                                <td><a href=".\shitte">尻手</a></td>
+                                <td><a href="#jn50" class="nambu_sisen_a">JR南武線（浜川崎支線）</a></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn03">
+                                <td>JN03</td>
+                                <td><a href=".\yakou">矢向</a></td>
+                                <td></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn04">
+                                <td>JN04</td>
+                                <td><a href=".\kashimada">鹿島田</a></td>
+                                <td></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn05">
+                                <td>JN05</td>
+                                <td><a href=".\hirama">平間</a></td>
+                                <td></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn06">
+                                <td>JN06</td>
+                                <td><a href=".\mukaigawaka">向河原</a></td>
+                                <td></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn07">
+                                <td>JN07</td>
+                                <td><a href=".\musashikosugi">武蔵小杉</a></td>
+                                <td>
+                                    <a href="..\ykosuka\#jy15" class="line-logo yokosuka">JR横須賀線</a>
+                                    <a href="..\shonan-shinjuku\#js15" class="line-logo shonan-shinjuku">JR湘南新宿ライン</a>
+                                    <a href="..\saikyo\#js15" class="line-logo sotetsu-tyokutu">JR・相鉄直通線</a>
+                                    <a href="\line\tokyu\toyoko\#ty11" class="line-logo toyoko">東急東横線</a>
+                                    <a href="\line\tokyu\meguro\#mg11" class="line-logo meguro">東急目黒線</a>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn08">
+                                <td>JN08</td>
+                                <td><a href=".\musashinakahara">武蔵中原</a></td>
+                                <td></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn09">
+                                <td>JN09</td>
+                                <td><a href=".\musashishinjyo">武蔵新城</a></td>
+                                <td></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn10">
+                                <td>JN10</td>
+                                <td><a href=".\musashimizonokuchi">武蔵溝ノ口</a></td>
+                                <td>
+                                    <a href="\line\tokyu\denentoshi\#dt10" class="line-logo denentoshi">東急田園都市線</a>
+                                    <a href="\line\tokyu\oimachi\#nt10" class="line-logo oimachi">東急大井町線</a>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn11">
+                                <td>JN11</td>
+                                <td><a href=".\tsudayama">津田山</a></td>
+                                <td></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn12">
+                                <td>JN12</td>
+                                <td><a href=".\kuji">久地</a></td>
+                                <td></td>
+                                <td><time datetime="2026-11-05">2026/11/5</time></td>
+                                <td>1.0</td>
+                            </tr>
+                            <tr id="jn13">
+                                <td>JN13</td>
+                                <td><a href=".\syukugawara">宿河原</a></td>
+                                <td></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn14">
+                                <td>JN14</td>
+                                <td><a href=".\noborito">登戸</a></td>
+                                <td><a href="\line\odakyu\odawara\#oh18" class="line-logoodawara">小田急小田原線</a></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn15">
+                                <td>JN15</td>
+                                <td><a href=".\nakanoshima">中野島</a></td>
+                                <td></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn16">
+                                <td>JN16</td>
+                                <td><a href=".\inadadutumi">稲田堤</a></td>
+                                <td></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn17">
+                                <td>JN17</td>
+                                <td><a href=".\yanokuchi">矢野口</a></td>
+                                <td></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn18">
+                                <td>JN18</td>
+                                <td><a href=".\inagnaganuma">稲城長沼</a></td>
+                                <td></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn19">
+                                <td>JN19</td>
+                                <td><a href=".\minamitama">南多摩</a></td>
+                                <td></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn20">
+                                <td>JN20</td>
+                                <td><a href=".\futyuhonmachi">府中本町</a></td>
+                                <td><a href="..\musashino\jm35" class="line-logo musashino">JR武蔵野線</a></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn21">
+                                <td>JN21</td>
+                                <td><a href=".\bubaigawara">分倍河原</a></td>
+                                <td><a href="\line\keio\honsen\#ko25" class="line-logo keio">京王線</a></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn22">
+                                <td>JN22</td>
+                                <td><a href=".\nishifu">西府</a></td>
+                                <td></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn23">
+                                <td>JN23</td>
+                                <td><a href=".\yaho">谷保</a></td>
+                                <td></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn24">
+                                <td>JN24</td>
+                                <td><a href=".\yagawa">矢川</a></td>
+                                <td></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn25">
+                                <td>JN25</td>
+                                <td><a href=".\nishikunitachi">西国立</a></td>
+                                <td></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn26">
+                                <td>JN26</td>
+                                <td><a href=".\tachikawa">立川</a></td>
+                                <td>
+                                    <a href="..\chuo\#jc19" class="line-logo chuo">JR中央線快速電車</a>
+                                    <a href="..\ome\#jc50" class="line-logo ome">JR青梅線</a>
+                                    <a href="\line\south-kanto\tama_monorail" class="line-logo tama_monorail">多摩モノレール線</a>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                        </table>
+                    </div>
+                    <h3>支線</h3>
+                    <div class="main_line_table">
+                        <table class="column_change">
+                            <tr class="jr_jre_nambu_color">
+                                <th>駅番号</th>
+                                <th>駅名</th>
+                                <th>乗り換え路線</th>
+                                <th>更新日</th>
+                                <th>version</th>
+                            </tr>
+                            <tr id="jn50">
+                                <td>JN02</td>
+                                <td><a href=".\sitte">尻手</a></td>
+                                <td><a href="#jn02" class="nambu_a">南武線（本線）</a></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn51">
+                                <td>JN51</td>
+                                <td><a href=".\hattyonawate">八丁畷</a></td>
+                                <td><a href="\line\kekyu\honsen\#kk27" class="line-logo kekyu_honsen">京急本線</a></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn52">
+                                <td>JN52</td>
+                                <td><a href=".\kawasakishinmachi">川崎新町</a></td>
+                                <td></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn53">
+                                <td>JN53</td>
+                                <td><a href=".\odasakae">小田栄</a></td>
+                                <td></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr id="jn54">
+                                <td>JN54</td>
+                                <td><a href="..\tsurumi\hamakawasaki">浜川崎</a></td>
+                                <td><a href="..\tsurumi\#ji08" class="line-logo tsurumi">JR鶴見線</a></td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <div id="right-navi"></div>
+    <div id="footer"></div>
+    <script src="\script.js"></script>
+</body>
+</html>
