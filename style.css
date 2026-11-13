@@ -258,7 +258,7 @@ footer {
     color: #dd0000;
     font-size: 1.4rem;
 }
-.symbol::before {
+.line-logo::before {
     content: "";
     display: inline-block;
     width: 1.4em; 
